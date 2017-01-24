@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <SnippetTypes>
+        <SnippetType>Expansion</SnippetType>
+      </SnippetTypes>
+      <Title>ue4beginoverlaph</Title>
+      <Author>M. Delva</Author>
+      <Description>Unreal Engine Begin Overlap function declaration snippet</Description>
+      <HelpUrl>
+      </HelpUrl>
+      <Shortcut>ue4beginoverlaph</Shortcut>
+    </Header>
+    <Snippet>
+      <Declarations>
+   <Literal Editable="true">
+      <ID>componentName</ID>
+      <ToolTip>Component name</ToolTip>
+      <Default>Component</Default>
+      <Function>
+      </Function>
+    </Literal>
+    </Declarations>
+      <Code Language="cpp"><![CDATA[
+UFUNCTION()
+void On$componentName$ComponentBeginOverlap( UPrimitiveComponent* overlapped_component, AActor* other_actor, UPrimitiveComponent * other_comp, int32 other_body_index, bool bFromSweep, const FHitResult & sweep_result );
+]]></Code>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
